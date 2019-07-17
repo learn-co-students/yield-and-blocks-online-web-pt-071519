@@ -1,13 +1,3 @@
-# def hello_t(array)
-#   i = 0 #counter variable
-
-#   while i < array.length
-#     yield (array[i]) #we use the bracket ([]) method to grab the value of each successive index element as we proceed through our while loop, yielding each to a block
-#     i += 1
-#   end
-#   array
-# end
-
 def hello_t(array)
   if block_given?
     i = 0
@@ -20,6 +10,16 @@ def hello_t(array)
     puts "Hey! No block was given!"
   end
 end
+
+# def hello_t(array)
+#   i = 0 #counter variable
+
+#   while i < array.length
+#     yield (array[i]) #we use the bracket ([]) method to grab the value of each successive index element as we proceed through our while loop, yielding each to a block
+#     i += 1
+#   end
+#   array
+# end
 
 # call your method here!
 # hello_t(["Tim", "Tom", "Jim"]) do |name|
